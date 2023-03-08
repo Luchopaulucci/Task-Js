@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <title>Upcoming Events</title>
+  </head>
+  <body>
+<!-- HEADER -->
+    <header>
+      <!-- BARRA DE BUSQUEDA -->
+      <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="./assets/imagenes/LogoAmazingEvents.png" alt="Logo" class="logo"/>
+          </a>
+          <div class="links">
+            <button type="button" class="btn boton">
+            <a href="./index.html" class="texto-links">Home</a>
+            </button>
+            <button type="button" class="btn boton">
+              <a href="" class="texto-links">Upcoming Events</a>
+            </button>
+            <button type="button" class="btn boton">
+              <a href="./pastEvents.html" class="texto-links">Past Events</a>
+            </button>
+            <button type="button" class="btn boton">
+              <a href="./contact.html" class="texto-links">Contact</a>
+            </button>
+            <button type="button" class="btn boton">
+              <a href="./stats.html" class="texto-links">Stats</a>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+<!-- MAIN -->
+    <main>
+      <section>
+        <div class="row">
+          <div class="col-12 titulo">
+            <button type="button" class="btn"><a href="./index.html"><img src="./assets/imagenes/bigger-than.png" alt=""></a></button>
+            <h1 class="flex">Upcoming Events</h1>
+            <button type="button" class="btn"><a href="./pastEvents.html"><img src="./assets/imagenes/smaller-than.png" alt=""></a></button>
+          </div>
+        </div>
+      </section>
+<!-- BARRA DE CATEGORIAS -->
+      <section>
+        <div class="row barra-categorias">
+          <div class="col-6 categorias">
+            <div>
+              <input type="checkbox" name="category" id="category">
+              <label for="category">Category</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="category" id="category">
+              <label for="category">Category</label>
+             </div>
+
+            <div>
+              <input type="checkbox" name="category" id="category">
+              <label for="category">Category</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="category" id="category">
+              <label for="category">Category</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="category" id="category">
+              <label for="category">Category</label>
+            </div>
+          </div>
+          <!-- BARRA DE BUSQUEDA DE LAS CATEGORIAs -->
+          <div class="col-6 busqueda">
+            <form class="d-flex" role="search">
+              <input class="form-contro" type="search" placeholder="Buscar categoria" id="barra-busqueda">
+              <button class="btn btn-primary" type="submit"><img src="./assets/imagenes/search.png" alt="busqueda"></button>
+            </form>
+          </div>
+        </div>
+      </section>
+<!-- CARDS DE LOS EVENTOS -->
+      <article class="flex cards">
+        <div id="eventosUpcoming" class="eventos"></div>
+      </article>
+    </main>
+<!-- FOOTER -->
+    <footer>
+      <div class="row">
+        <div class="col-12 footer">
+          <div class="flex">
+            <a href=""><img src="./assets/imagenes/instagram.png" alt="instagram"></a>
+            <a href=""><img src="./assets/imagenes/facebook.png" alt="facebook"></a>
+            <a href=""><img src="./assets/imagenes/whatsapp.png" alt="whatsapp"></a>
+          </div>
+          <div class="flex">
+            <h3>16-TN</h3>
+          </div>
+        </div>
+      </div>
+    </footer>
+<!-- SCRIPT DE BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <script src="./assets/javascript/upcoming.js"></script>
+</html>
