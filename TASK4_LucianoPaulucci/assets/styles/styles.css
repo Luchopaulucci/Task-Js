@@ -97,8 +97,9 @@ section{
 
 .categorias{
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 15px;
 }
 
 .formulario{
@@ -110,14 +111,22 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    flex-wrap: wrap;
+}
+.card-responsive{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-general{
+    width: 90%;
 }
 
 .img-card{
     margin: 40px;
     box-shadow: 5px 30px 40px;
-    max-width: 300px;
-    max-height: 200px;
+    max-width: 300%;
+    max-height: 150%;
 }
 
 .card-text{
@@ -242,6 +251,5 @@ section{
         text-align: center;
         flex-wrap: wrap;
     }
-
 
 } 

@@ -43,13 +43,11 @@ function crearEntidad(array) {
   console.log("Esto es el evento " + evento);
   let cardDetails = ``
   cardDetails += `
-      <div class="card" >
+      <div class="card card-general" >
           <div class="row card-detail">
-              <div class="col-5 img-card">
-                  <img src="${evento.image}" class="img-fluid " alt="Imagen de evento">
-              </div>
-              <div class="col-6  card-text">
-                  <div class="card-body">
+              <img src="${evento.image}" class="col-5 img-fluid img-card"alt="Imagen de evento">
+              <div class="col-6 card-detail card-text">
+                  <div class="card-body card-detail">
                   <h5 class="card-title">${evento.name}</h5>
                   <p class="card-text">Description: ${evento.description}</p>
                   <p class="card-text col-4">Category: ${evento.category}</p>

@@ -110,9 +110,6 @@ function mostrarTablaUpcoming(array) {
     let porcentaje = ((estimado*100)/capacidad).toFixed(2)
     porcentajeAttendance[category] = porcentaje  
   }
-  console.log(porcentajeAttendance);
-  console.log(porcentajeCapacidad);
-  console.log(categorias);
 
   let tablaProximos = ``
 
@@ -120,7 +117,7 @@ function mostrarTablaUpcoming(array) {
     tablaProximos += `
         <tr>
           <td>${category}</td>
-          <td>${porcentajeCapacidad[category]}</td>
+          <td>${precio[category]}</td>
           <td>${porcentajeAttendance[category]}</td>
         </tr>
     `
@@ -157,11 +154,12 @@ function mostrarTablaPast(array) {
   const precio = {}
   arrayEventos.flat().forEach(evento => { //AGARRA EL ARRAY DONDE ESTAN AGRUPADOS POR SU CATEGORIA Y LO QUE HACE ES SUMAR EN CADA CATEGORIA EL PRECIO DEL EVENTO Y DEJARLO SOLO EN UN ARRAY
     if (precio[evento.category]) {
-      precio[evento.category] += (evento.price*evento.estimate);
+      precio[evento.category] += (evento.price*evento.assistance);
     } else {
-      precio[evento.category] = (evento.price*evento.estimate);
+      precio[evento.category] = (evento.price*evento.assistance);
     }
   });
+  console.log(precio);
 
   const porcentajeEstimado = {}
   arrayEventos.flat().forEach(evento => { //AGARRA EL ARRAY DONDE ESTAN AGRUPADOS POR SU CATEGORIA Y LO QUE HACE ES SUMAR EN CADA CATEGORIA ASISTENCIAS DEL EVENTO Y DEJARLO SOLO EN UN ARRAY
@@ -188,9 +186,6 @@ function mostrarTablaPast(array) {
     let porcentaje = ((estimado*100)/capacidad).toFixed(2)
     porcentajeAttendance[category] = porcentaje  
   }
-  console.log(porcentajeAttendance);
-  console.log(porcentajeCapacidad);
-  console.log(categorias);
 
   tablaPasados = ``
 
@@ -198,7 +193,7 @@ function mostrarTablaPast(array) {
     tablaPasados += `
         <tr>
           <td>${category}</td>
-          <td>${porcentajeCapacidad[category]}</td>
+          <td>${precio[category]}</td>
           <td>${porcentajeAttendance[category]}</td>
         </tr>
     `
