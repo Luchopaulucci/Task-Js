@@ -41,7 +41,7 @@ function mostrarTablaStatic(array) {
   let capacityMax = arrayMaxCapacity.capacity;
 
   let tablaEstatica = `
-            <tr>
+            <tr class="tabla-contenido">
               <td>${arrayMasAsistencias.name} : (${porcentajeMas}%)</td>
               <td>${arrayMinAsistencias.name} : (${porcentajeMin}%)</td>
               <td>${arrayMaxCapacity.name} : ${capacityMax}</td>
@@ -74,6 +74,7 @@ function mostrarTablaUpcoming(array) {
     let FiltrarEventos = EventosUpcoming.filter(evento => evento.category == category);
     arrayEventos.push(FiltrarEventos)
   }
+  console.log(arrayEventos);
 
 
   const precio = {}
@@ -115,7 +116,7 @@ function mostrarTablaUpcoming(array) {
 
   for (const category of categorias) {
     tablaProximos += `
-        <tr>
+        <tr class="tabla-contenido">
           <td>${category}</td>
           <td>${precio[category]}</td>
           <td>${porcentajeAttendance[category]}</td>
@@ -191,7 +192,7 @@ function mostrarTablaPast(array) {
 
   for (const category of categorias) {
     tablaPasados += `
-        <tr>
+        <tr class="tabla-contenido">
           <td>${category}</td>
           <td>${precio[category]}</td>
           <td>${porcentajeAttendance[category]}</td>

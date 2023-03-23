@@ -39,8 +39,8 @@ function mostrarCategorias(array) {
   arrayCategorias.forEach(category => {
     categoriasPastHTML += `
     <div>
-        <input type="checkbox" name="category" id="${category}" value="${category}"/>
-        <label for="${category}">${category}</label>
+        <input class="form-check-input" type="checkbox" name="category" id="${category}" value="${category}"/>
+        <label class="form-check-label" for="${category}">${category}</label>
     </div>
     `
   })

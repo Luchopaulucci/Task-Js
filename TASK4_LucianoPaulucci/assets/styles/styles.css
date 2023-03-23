@@ -21,7 +21,11 @@ body{
 .btn-card{
     display: flex;
     justify-content:space-between ;
+    align-items: end;
 }
+
+/* ----------------------------------------------------ANIMACIONES */
+
 
 /* ----------------------------------------------------RETOQUES VISUALES */
 .barra-busqueda{
@@ -44,7 +48,14 @@ body{
 
 .boton{
     background-color: #d90368;
+    transition: .5s, white .10s;
 }
+
+.boton:hover{
+    transform: scale3d(1.5, 1.5, 0.3);
+        -webkit-transform: scale3d(1.5, 1.5, 0.3);
+        -moz-transform: scale3d(1.5, 1.5, 0.3);
+}            
 
 /* ----------------------------------------------------LETRAS */
 a{
@@ -76,6 +87,10 @@ article{
 
 section{
     padding-bottom: 2%;
+}
+
+table{
+    border: 1px solid #333;
 }
 
 .navbar{
@@ -140,16 +155,10 @@ section{
 .tabla th {
     padding-top: 12px;
     padding-bottom: 15px;
-    text-align: left;
+    text-align: center;
     color: black;
     background-color: #BCECE0;
   }
-
-.tabla{
-    margin-bottom: 50px;
-    background-color: #4C5270;
-    border-color: black;
-}
 
 .tablas{
     display: flex;
@@ -157,6 +166,17 @@ section{
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.tabla{
+    margin-bottom: 50px;
+    background-color: #4C5270;
+    border-color: black;
+    text-align: center;
+}
+
+.tabla-contenido{
+    background-color: gray;
 }
 
 .eventos{
