@@ -67,7 +67,7 @@ function mostrarCategorias(array) {
   eventosPast.innerHTML = cardEventos;
   
   if(array.length == 0){
-    eventosPast.innerHTML = `<h2">No hay coincidencias <br/> VUELVA A INTENTAR CON OTRA BUSQUEDA</h2>`
+    eventosPast.innerHTML = `<h2"> not found <br/> TRY AGAIN </h2>`
   }
 }
 

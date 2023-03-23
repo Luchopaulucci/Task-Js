@@ -62,7 +62,7 @@ function mostrarEventos(array) {
   eventosIndex.innerHTML = cardEventos;
 
   if(array.length === 0){
-    eventosIndex.innerHTML = `<h2">No hay coincidencias <br/> VUELVA A INTENTAR CON OTRA BUSQUEDA</h2>`
+    eventosIndex.innerHTML = `<h2"> not found <br/> TRY AGAIN </h2>`
   }
 }
 

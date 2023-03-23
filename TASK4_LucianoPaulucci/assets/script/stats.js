@@ -118,8 +118,8 @@ function mostrarTablaUpcoming(array) {
     tablaProximos += `
         <tr class="tabla-contenido">
           <td>${category}</td>
-          <td>${precio[category]}</td>
-          <td>${porcentajeAttendance[category]}</td>
+          <td> $ ${precio[category]}</td>
+          <td>${porcentajeAttendance[category]} % </td>
         </tr>
     `
     tablaUpcoming.innerHTML = tablaProximos;
@@ -194,14 +194,12 @@ function mostrarTablaPast(array) {
     tablaPasados += `
         <tr class="tabla-contenido">
           <td>${category}</td>
-          <td>${precio[category]}</td>
-          <td>${porcentajeAttendance[category]}</td>
+          <td> $ ${precio[category]}</td>
+          <td>${porcentajeAttendance[category]} % </td>
         </tr>
     `
     tablaPast.innerHTML = tablaPasados;
     
   }
-
-
 
 }
